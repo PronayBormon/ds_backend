@@ -547,16 +547,18 @@
                                     <div class="col-md-12">
                                         <div class="form-group mb-2">
                                             <label for="">Product title</label>
-                                            <input type="text" required placeholder="User name" class="form-control">
+                                            <input type="text" required placeholder="Product title " class="form-control">
                                         </div>
                                         <div class="form-group mb-2">
-                                            <label for="">Product brief description <span  style="font-size: 12px;" class="text-danger">optional</span></label>
+                                            <label for="">Product brief description <span style="font-size: 12px;"
+                                                    class="text-danger">optional</span></label>
                                             <textarea name="" id="" cols="30" rows="2" class="form-control"></textarea>
                                         </div>
                                         <div class="form-group mb-2">
-                                            <label for="">Product model<span  style="font-size: 12px;" class="text-danger">optional</span></label>
+                                            <label for="">Product model<span style="font-size: 12px;"
+                                                    class="text-danger">optional</span></label>
                                             <input type="text" class="form-control">
-                                        </div> 
+                                        </div>
                                         <div class="form-group mb-2">
                                             <label for="">Product category</label>
                                             <input type="text" class="form-control">
@@ -572,8 +574,161 @@
                                             <label for="">Inventory unit</label>
                                             <input type="text" class="form-control">
                                         </div>
-                                        <button type="submit" class="btn-primary w-100">Save</button>
+                                        <div class="form-group mb-2">
+                                            <label for="">The proportion of gift points for purchase is optional and
+                                                will be distributed according to the proportion of the amount of the
+                                                product multiplied by the quantity.
+                                            </label>
+                                            <div class="bg-warning p-2 message  mb-2">
+                                                <p>Once the order is completed, the locked points will be automatically
+                                                    issued to the user, and then the valid points will be automatically
+                                                    issued by the script.</p>
+                                            </div>
+                                            <input type="text" placeholder="Buy points for free" class="form-control">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <label for="">The minimum purchase quantity <span>is required and the
+                                                    default value is 1</span></label>
+                                            <input type="number" placeholder="1" value="1" class="form-control">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <label for="">The maximum single purchase quantity <span>is optional. The
+                                                    maximum single purchase quantity is 100000000. If it is less than or
+                                                    equal to 0 or empty, there is no limit.
+                                                    Maximum single purchase quantity
+                                                </span></label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">The optional deduction rules for inventory <span>deduction are
+                                                    determined by the background configuration->deduction inventory
+                                                    rules.</span></label>
+                                            <div class="d-flex">
+                                                <div class="d-flex align-items-center ml-2">
+                                                    <input type="radio" id="Active" checked name="status">
+                                                    <label for="Active" class="m-0">yes</label>
+                                                </div>
+                                                <div class="d-flex align-items-center ml-2">
+                                                    <input type="radio" id="Inactive" name="status">
+                                                    <label for="Inactive" class="m-0">no </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Optional loading and unloading is not visible to users after
+                                                being removed.</span></label>
+                                            <div class="d-flex">
+                                                <div class="d-flex align-items-center ml-2">
+                                                    <input type="radio" id="add" checked name="loading">
+                                                    <label for="add" class="m-0">On the shelves</label>
+                                                </div>
+                                                <div class="d-flex align-items-center ml-2">
+                                                    <input type="radio" id="remove" name="loading">
+                                                    <label for="remove" class="m-0">Remove from shelves </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- product attribute -->
+                                        <div class="card">
+                                            <div class="card-body" id="productForm">
 
+                                                <!-- First Row -->
+                                                <div class="form-row" id="formRow">
+                                                    <!-- Price -->
+                                                    <div class="col-md">
+                                                        <div class="form-group">
+                                                            <label for="price">Price</label>
+                                                            <input type="number" class="form-control" name="price"
+                                                                placeholder="Price" step="0.01">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Cost Price -->
+                                                    <div class="col-md">
+                                                        <div class="form-group">
+                                                            <label for="costPrice">Cost Price</label>
+                                                            <input type="number" class="form-control" name="costPrice"
+                                                                placeholder="Cost Price" step="0.01">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Weight -->
+                                                    <div class="col-md">
+                                                        <div class="form-group">
+                                                            <label for="weight">Weight (kg)</label>
+                                                            <input type="number" class="form-control" name="weight"
+                                                                placeholder="Weight" step="0.01">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Volume -->
+                                                    <div class="col-md">
+                                                        <div class="form-group">
+                                                            <label for="volume">Volume (L)</label>
+                                                            <input type="number" class="form-control" name="volume"
+                                                                placeholder="Volume" step="0.01">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Coding -->
+                                                    <div class="col-md">
+                                                        <div class="form-group">
+                                                            <label for="coding">Coding</label>
+                                                            <input type="text" class="form-control" name="coding"
+                                                                placeholder="Coding">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Barcode -->
+                                                    <div class="col-md">
+                                                        <div class="form-group">
+                                                            <label for="barcode">Barcode</label>
+                                                            <input type="text" class="form-control" name="barcode"
+                                                                placeholder="Barcode">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Add/Remove Button -->
+                                                    <div class="col-md-auto align-self-center">
+                                                        <button type="button"
+                                                            class="btn mt-3 btn-primary add-remove-btn"
+                                                            onclick="addRow(this)">
+                                                            Add Row
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group mb-2">
+                                            <label for="">Photo album</label>
+                                            <input type="file" multiple placeholder="1" value="1" class="form-control">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <label for="">Description</label>
+                                            <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+                                        </div>
+
+                                        <div class="form-group mb-2">
+                                            <label for="">SEO title <span>generally should not exceed 80
+                                                    characters</span></label>
+                                            <input type="text" name="" placeholder="SEO title " id=""
+                                                class="form-control">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <label for="">SEO keywords <span>generally do not exceed 100 characters, and
+                                                    multiple keywords are separated by
+                                                    semi-rounded commas [,]</span></label>
+                                            <input type="text" name="" placeholder="SEO keywords " id=""
+                                                class="form-control">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <label for="">SEO descriptions <span> generally should not exceed 200
+                                                    characters</span></label>
+                                            <textarea type="text" name="" placeholder="SEO description" id=""
+                                                class="form-control"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn-primary w-100">Save</button>
                                     </div>
                                 </div>
                             </form>
@@ -599,6 +754,7 @@
 
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
     <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -627,22 +783,38 @@
     <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
     <!-- AdminLTE App -->
     <script src="dist/js/adminlte.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="dist/js/demo.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="dist/js/pages/dashboard.js"></script>  <script>
-        $(document).ready(function () {
-          $(".toggle_password").click(function () {
-            $(this).toggleClass("fa-eye fa-eye-slash");
-            var input = $($(this).attr("toggle"));
-            if (input.attr("type") == "password") {
-              input.attr("type", "text");
-            } else {
-              input.attr("type", "password");
-            }
-          });
-        })
-      </script>
+
+    
+    <script>
+        function addRow(button) {
+            // Get the parent form row
+            const formRow = button.closest('.form-row');
+
+            // Clone the form row
+            const newRow = formRow.cloneNode(true);
+
+            // Replace the "Add Row" button with a "Remove Row" button
+            const addButton = newRow.querySelector('.add-remove-btn.mt-3');
+            addButton.textContent = 'Remove Row';
+            addButton.classList.replace('btn-primary', 'btn-danger');
+            addButton.onclick = function () {
+                removeRow(this);
+            };
+
+            // Clear the input fields in the new row
+            const inputFields = newRow.querySelectorAll('input');
+            inputFields.forEach(input => input.value = '');
+
+            // Append the new row to the form
+            document.getElementById('productForm').appendChild(newRow);
+        }
+
+        function removeRow(button) {
+            // Remove the parent form row
+            const formRow = button.closest('.form-row');
+            formRow.remove();
+        }
+    </script>
 </body>
 
 </html>

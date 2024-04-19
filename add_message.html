@@ -521,12 +521,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">User list </h1>
+                            <h1 class="m-0">Add message</h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                <li class="breadcrumb-item active">User list</li>
+                                <li class="breadcrumb-item"><a href="message_management.html">Message management</a></li>
+                                <li class="breadcrumb-item active">Add message </li>
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -537,138 +537,48 @@
             <!-- Main content -->
             <section class="content">
                 <div class="container-fluid">
-                    <div class="page_top  my-2">
-                        <div class="row justify-content-between align-items-center my-2">
-                            <div class="col-md-6">
-                                <form action="">
-                                    <table class="table mb-0">
-                                        <thead>
-                                            <tr>
-                                                <th class="border-0  p-0 " style="padding-right: 5px !important;">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="search by name ">
-                                                </th>
-                                                <th class="border-0 p-0 me-1" style="padding-right: 5px !important;">
-                                                    <select name="" id="" class="form-control">
-                                                        <option value="" selected disabled>Select status</option>
-                                                        <option value="">Active</option>
-                                                        <option value="">Inactive</option>
-                                                        <option value="">Draft</option>
-                                                    </select>
-                                                </th>
-                                                <th class="border-0  p-0 h-100">
-                                                    <button type="button" style="min-width: 90px;"
-                                                        class="btn btn-primary btn-fla"><i
-                                                            class="fas fa-search"></i>Search</button>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                    </table>
-                                </form>
-                            </div>
-                            <div class="col-md-6 ">
-                                <div class="buttonList">
-                                    <div class="btn-group">
-                                        <a href="add_user.html" type="button" class="btn btn-primary btn-flat ">
-                                            <i class="fas fa-plus"></i>Add
-                                        </a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Separated link</a>
-                                        </div>
-                                    </div>
-                                    <button type="button" class="btn btn-danger btn-flat btn-sm"><i
-                                            class="fas fa-trash-alt"></i>Delete</button>
-                                    <button type="button" class="btn btn-warning btn-flat btn-sm"><i
-                                            class="fas fa-trash-alt"></i>Reset</button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- table section start here  -->
                     <div class="card">
-                        <div class="card-body table-responsive p-0">
-                            <div class="filter_options">
+                        <div class="card-header">
 
-                            </div>
-                            <table class="table table-hover text-nowrap">
-                                <thead>
-                                    <tr>
-                                        <th><input type="checkbox" id="checkAll"></th>
-                                        <th>User ID</th>
-                                        <th>user type</th>
-                                        <th>User Info</th>
-                                        <th>state</th>
-                                        <th>Invite users</th>
-                                        <th>Register/Login IP</th>
-                                        <th>Register/login IP country</th>
-                                        <th>Registration time </th>
-                                        <th>Update time </th>
-                                        <th>Action</th>
-                                    </tr>
-
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox" class="checkBox">
-                                        </td>
-                                        <td>168202</td>
-                                        <td>real users</td>
-                                        <td class="text-left">
-                                            <p>Name: test305</p>
-                                            <p>Cell phone: None</p>
-                                            <p>Email: None</p>
-                                            <p>Telegram: None</p>
-                                            <p>whatsapp: none</p>
-                                            <p>Other ways: none</p>
-                                        </td>
-                                        <td>normal</td>
-                                        <td>
-                                            <img src="images/avatar.png" width="30px" alt="" class="img-fluid">
-                                            <p>Name: test222</p>
-                                            <p>Cell phone: None</p>
-                                            <p>Email: None</p>
-                                        </td>
-                                        <td>
-                                            <p>Registration: 185.126.148.245 (1)</p>
-                                            <p>Login: 185.126.148.245</p>
-                                        </td>
-                                        <td>
-                                            <p>Registration: China</p>
-                                            <p>Login: China</p>
-                                        </td>
-                                        <td>2024-04-11 04:37:58</td>
-                                        <td>2024-04-11 04:37:58</td>
-                                        <td>
-                                            <div class="">
-                                                <button class="btn w-100 d-block btn-default btn-sm btn-flat"
-                                                    data-toggle="modal" data-target="#details"><i
-                                                        class="far fa-eye"></i>details</button>
-                                                <button class="btn w-100 btn-warning btn-sm btn-flat"><i
-                                                        class="fas fa-pen"></i>Edit</button>
-                                                <button class="btn  d-block w-100 d-block btn-default btn-sm btn-flat"
-                                                    data-toggle="modal" data-target="#operation"><i
-                                                        class="fas fa-unlock-alt"></i>Start operation</button>
-                                                <button class="btn  d-block w-100 d-block btn-danger btn-sm btn-flat" data-toggle="modal" data-target="#delete"><i
-                                                        class="fas fa-trash-alt"></i>Delete</button>
-                                                <button
-                                                    class="btn  d-block w-100 d-block btn-default btn-sm btn-flat"  data-toggle="modal" data-target="#team"><i
-                                                        class="fas fa-users"></i>Team hidden</button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
                         </div>
-                        <!-- /.card-body -->
+                        <div class="card-body">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group mb-2">
+                                            <label for="">Title <span class="text-danger">( required)</span></label>
+                                            <input type="text" placeholder="title" class="form-control">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            
+                                            <label for="">Content <span class="text-danger">(required)</span></label>
+                                            <input type="text" placeholder="Total amount of subordinate orders" class="form-control">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            
+                                            <label for="">Describe </label>
+                                            <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <label for="">Message object required </label>
+                                            <select name="" id="" class="form-control">
+                                                <option value="">Personal</option>
+                                                <option value="">Agent line</option>
+                                                <option value="">System</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            
+                                            <label for="">User/Agent Id</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <button type="submit" class="btn-primary w-100">Save</button>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <!-- table section end here  -->
                 </div>
             </section>
             <!-- /.content -->
@@ -678,257 +588,6 @@
             <strong>Copyright &copy; 2024</strong>
             All rights reserved.
         </footer>
-
-        <!-- details modal  -->
-        <div class="modal fade" id="details" tabindex="-1" role="dialog" aria-labelledby="detailsTitle"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                    <div class="modal-header py-1">
-                        <h5 class="modal-title" id="detailsTitle">Details</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <table class="table">
-                            <tr>
-                                <td class="text-left">User ID</td>
-                                <td class="text-left">168202</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">user type</td>
-                                <td class="text-left">real users</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">User Info</td>
-                                <td class="text-left">
-                                    <p>Name: test305</p>
-                                    <p>Cell phone: None</p>
-                                    <p>Email: None</p>
-                                    <p>Telegram: None</p>
-                                    <p>whatsapp: none</p>
-                                    <p>Other ways: none</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">state</td>
-                                <td class="text-left">normal</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">Invite users</td>
-                                <td class="text-left">
-                                    <img src="images/avatar.png" width="30px" alt="" class="img-fluid">
-                                    <p>Name: test222</p>
-                                    <p>Cell phone: None</p>
-                                    <p>Email: None</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">Register/Login IP</td>
-                                <td class="text-left">
-                                    <p>Registration: 185.126.148.245 (1)</p>
-                                    <p>Login: 185.126.148.245</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">Register/login IP country</td>
-                                <td class="text-left">
-                                    <p>Registration: China</p>
-                                    <p>Login: China</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">Registration time </td>
-                                <td class="text-left">2024-04-11 04:37:58</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">Update time </td>
-                                <td class="text-left">2024-04-11 04:37:58</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- start operation modal start here  -->
-        <div class="modal fade" id="operation" tabindex="-1" role="dialog" aria-labelledby="detailsTitle"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                    <div class="modal-header py-1">
-                        <h5 class="modal-title" id="detailsTitle">Details</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="">
-
-                            <div class="store_container">
-                                <div class="services_">
-                                    <label class="active" for="storeOne">
-                                        <a type="button">
-                                            <img src="images/active_store.gif" alt="" class="img-fluid">
-                                            <div class="check">
-                                                <i class="fa-solid fa-check"></i>
-                                            </div>
-                                        </a>
-                                        <div class="priceDetails">
-                                            <div class="pLeft">
-                                                <h1>BIGC</h1>
-                                                <p>Price:<strong> $30</strong></p>
-                                                <span>30 days </span>
-                                                <p>Store agency service</p>
-                                            </div>
-                                            <div class="pRht">
-                                                <button class="dMdal_open" type="button">Details <i
-                                                        class="fa-solid fa-arrow-right"></i></button>
-                                                <strong>24-4-2024 00:00:00 Active </strong>
-                                            </div>
-                                        </div>
-                                    </label>
-                                    <input type="checkbox" hidden="" id="storeOne">
-                                </div>
-                                <div class="services_">
-                                    <label for="storeTwo" class="active">
-                                        <a type="button">
-                                            <img src="images/active_store.gif" alt="" class="img-fluid">
-                                            <div class="check">
-                                                <i class="fa-solid fa-check"></i>
-                                            </div>
-                                        </a>
-                                        <div class="priceDetails">
-                                            <div class="pLeft">
-                                                <h1>BIGC</h1>
-                                                <p>Price:<strong> $30</strong></p>
-                                                <span>30 days </span>
-                                                <p>Store agency service</p>
-                                            </div>
-                                            <div class="pRht">
-                                                <button class="dMdal_open" type="button">Details <i
-                                                        class="fa-solid fa-arrow-right"></i></button>
-                                                <strong class="text-white">Inactive </strong>
-                                            </div>
-                                        </div>
-                                    </label>
-                                    <input type="checkbox" hidden="" id="storeTwo">
-                                </div>
-                                <div class="services_">
-                                    <label for="storeThree" class="">
-                                        <a type="button">
-                                            <img src="images/active_store.gif" alt="" class="img-fluid">
-                                            <div class="check">
-                                                <i class="fa-solid fa-check"></i>
-                                            </div>
-                                        </a>
-                                        <div class="priceDetails">
-                                            <div class="pLeft">
-                                                <h1>BIGC</h1>
-                                                <p>Price:<strong> $30</strong></p>
-                                                <span>30 days </span>
-                                                <p>Store agency service</p>
-                                            </div>
-                                            <div class="pRht">
-                                                <button class="dMdal_open" type="button">Details <i
-                                                        class="fa-solid fa-arrow-right"></i></button>
-                                                <strong class="text-white">Inactive </strong>
-                                            </div>
-                                        </div>
-                                    </label>
-                                    <input type="checkbox" hidden="" id="storeThree">
-                                </div>
-                                <div class="services_">
-                                    <label for="storeFour" class="">
-                                        <a type="button">
-                                            <img src="images/active_store.gif" alt="" class="img-fluid">
-                                            <div class="check">
-                                                <i class="fa-solid fa-check"></i>
-                                            </div>
-                                        </a>
-                                        <div class="priceDetails">
-                                            <div class="pLeft">
-                                                <h1>BIGC</h1>
-                                                <p>Price:<strong> $30</strong></p>
-                                                <span>30 days </span>
-                                                <p>Store agency service</p>
-                                            </div>
-                                            <div class="pRht">
-                                                <button class="dMdal_open" type="button">Details <i
-                                                        class="fa-solid fa-arrow-right"></i></button>
-                                                <strong class="text-white">Inactive </strong>
-                                            </div>
-                                        </div>
-                                    </label>
-                                    <input type="checkbox" hidden="" id="storeFour">
-                                </div>
-                                <div class="services_">
-                                    <label for="storefive" class="">
-                                        <a type="button">
-                                            <img src="images/active_store.gif" alt="" class="img-fluid">
-                                            <div class="check">
-                                                <i class="fa-solid fa-check"></i>
-                                            </div>
-                                        </a>
-                                        <div class="priceDetails">
-                                            <div class="pLeft">
-                                                <h1>BIGC</h1>
-                                                <p>Price:<strong> $30</strong></p>
-                                                <span>30 days </span>
-                                                <p>Store agency service</p>
-                                            </div>
-                                            <div class="pRht">
-                                                <button class="dMdal_open" type="button">Details <i
-                                                        class="fa-solid fa-arrow-right"></i></button>
-                                                <strong class="text-white">Inactive </strong>
-                                            </div>
-                                        </div>
-                                    </label>
-                                    <input type="checkbox" hidden id="storefive">
-                                </div>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- team show modal  -->
-          <div class="modal fade" id="team" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header justify-content-center py-1">
-                  <h5 class="modal-title text-danger text-center" id="exampleModalCenterTitle">Confirmation</h5>
-                </div>
-                <div class="modal-body text-center">
-                  Are you sure want to show your team?
-                </div>
-                <div class="d-flex align-items-center p-1">
-                  <button type="button" class="btn btn-default btn-flat w-50" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-danger btn-flat w-50">Confirm</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- team show modal  -->
-          <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header justify-content-center py-1">
-                  <h5 class="modal-title text-danger text-center" id="exampleModalCenterTitle">Confirmation</h5>
-                </div>
-                <div class="modal-body text-center">
-                  Are you sure want to delete?
-                </div>
-                <div class="d-flex align-items-center p-1">
-                  <button type="button" class="btn btn-default btn-flat w-50" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-danger btn-flat w-50">Confirm</button>
-                </div>
-              </div>
-            </div>
-          </div>
 
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
@@ -970,44 +629,18 @@
     <script src="dist/js/adminlte.js"></script>
 
     <script>
-
         $(document).ready(function () {
-            $('#checkAll').click(function () {
-                if ($(this).is(':checked')) {
-                    $('.checkBox').prop('checked', true);
-                } else {
-                    $('.checkBox').prop('checked', false);
-                }
-            });
-
-            $('.checkBox').click(function () {
-                if ($('.checkBox:checked').length !== $('.checkBox').length) {
-                    $('#checkAll').prop('checked', false);
-                } else {
-                    $('#checkAll').prop('checked', true);
-                }
-            });
-        });
-
-        $(document).ready(function () {
-            $(".btn_check").click(function () {
-                $(this).toggleClass("active");
-            });
+          $(".toggle_password").click(function () {
+            $(this).toggleClass("fa-eye fa-eye-slash");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+              input.attr("type", "text");
+            } else {
+              input.attr("type", "password");
+            }
+          });
         })
-        $(document).ready(function () {
-            $(".services_ label").click(function () {
-                $(this).toggleClass("active");
-                // $(".services_ a").addClass("active");
-            });
-            $(".dMdal_open").click(function () {
-                event.stopPropagation();
-                $(".dMdal_").fadeIn();
-            });
-            $(".bt_close").click(function () {
-                $(".dMdal_").fadeOut();
-            });
-        })
-    </script>
+      </script>
 </body>
 
 </html>
